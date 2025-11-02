@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- pandoc -s -f gfm -t html README.md -o README.html -->
+
+<p>Tiny, copyright-free, PII-free collision PoCs</p>
+<h1 id="md5">MD5</h1>
+<h2 id="fastcoll">FastColl</h2>
+<ul>
+<li>GIF images <a href="md5-1.gif" class="uri">md5-1.gif</a> / <a href="md5-2.gif" class="uri">md5-2.gif</a></li>
+</ul>
+<h2 id="unicoll">UniColl</h2>
+<ul>
+<li><p>GZip archives <a href="md5-1.gz" class="uri">md5-1.gz</a> / <a href="md5-2.gz" class="uri">md5-2.gz</a></p></li>
+<li><p>JPG images</p>
+<ul>
+<li>via UniColl <a href="md5-1.jpg" class="uri">md5-1.jpg</a> / <a href="md5-2.jpg" class="uri">md5-2.jpg</a></li>
+<li>via modified FastColl <a href="md5-1fc.jpg" class="uri">md5-1fc.jpg</a> / <a href="md5-2fc.jpg" class="uri">md5-2fc.jpg</a></li>
+</ul></li>
+<li><p>PDF documents <a href="md5-1.pdf" class="uri">md5-1.pdf</a> / <a href="md5-2.pdf" class="uri">md5-2.pdf</a></p></li>
+<li><p>PNG images</p>
+<ul>
+<li>generic header, not 100% compatible
+<ul>
+<li>appended data <a href="md5-1.png" class="uri">md5-1.png</a> / <a href="md5-2.png" class="uri">md5-2.png</a></li>
+<li>appended data w/ correct CRCs <a href="md5-crc1.png" class="uri">md5-crc1.png</a> / <a href="md5-crc2.png" class="uri">md5-crc2.png</a></li>
+<li>synchronized comments <a href="md5-sync1.png" class="uri">md5-sync1.png</a> / <a href="md5-sync2.png" class="uri">md5-sync2.png</a></li>
+</ul></li>
+<li>specific header w/ common dimensions/colorspace <a href="md5-s1.png" class="uri">md5-s1.png</a> / <a href="md5-s2.png" class="uri">md5-s2.png</a></li>
+</ul></li>
+<li><p>MP4</p>
+<ul>
+<li>generic header, 32b length (LTV) <a href="md5-1.mp4" class="uri">md5-1.mp4</a> / <a href="md5-2.mp4" class="uri">md5-2.mp4</a></li>
+<li>generic header, 64b length (TLV) <a href="md5-l1.mp4" class="uri">md5-l1.mp4</a> / <a href="md5-l2.mp4" class="uri">md5-l2.mp4</a></li>
+<li>specific header <a href="md5-s1.mp4" class="uri">md5-s1.mp4</a> / <a href="md5-s2.mp4" class="uri">md5-s2.mp4</a></li>
+</ul></li>
+<li><p>ZIP <a href="md5-1.zip" class="uri">md5-1.zip</a> / <a href="md5-2.zip" class="uri">md5-2.zip</a></p></li>
+<li><p>LZ4 archives <a href="md5-1.lz4" class="uri">md5-1.lz4</a> / <a href="md5-2.lz4" class="uri">md5-2.lz4</a></p></li>
+<li><p>Zstandard archives <a href="md5-1.zstd" class="uri">md5-1.zstd</a> / <a href="md5-2.zstd" class="uri">md5-2.zstd</a></p></li>
+<li><p>LZ4/Zstandard archives <a href="md5-c6a611ce.zstd" class="uri">md5-c6a611ce.zstd</a> / <a href="md5-c6a611ce.lz4" class="uri">md5-c6a611ce.lz4</a></p></li>
+<li><p>Wasm executables <a href="md5-1.wasm" class="uri">md5-1.wasm</a> / <a href="md5-2.wasm" class="uri">md5-2.wasm</a></p></li>
+</ul>
+<h2 id="hashclash">HashClash</h2>
+<ul>
+<li>PE executables <a href="md5-1.exe" class="uri">md5-1.exe</a> / <a href="md5-2.exe" class="uri">md5-2.exe</a></li>
+</ul>
+<p>ZIP-based formats:</p>
+<ul>
+<li>Office Open XML
+<ul>
+<li>DOCX <a href="md5-1.docx" class="uri">md5-1.docx</a> / <a href="md5-2.docx" class="uri">md5-2.docx</a></li>
+<li>PPTX <a href="md5-1.pptx" class="uri">md5-1.pptx</a> / <a href="md5-2.pptx" class="uri">md5-2.pptx</a></li>
+<li>XLSX <a href="md5-1.xls" class="uri">md5-1.xls</a> / <a href="md5-2.xls" class="uri">md5-2.xls</a></li>
+</ul></li>
+<li>Open Container Format
+<ul>
+<li>EPUB <a href="md5-1.epub" class="uri">md5-1.epub</a> / <a href="md5-2.epub" class="uri">md5-2.epub</a></li>
+</ul></li>
+<li>Open Packaging Conventions
+<ul>
+<li>XPS <a href="md5-1.xps" class="uri">md5-1.xps</a> / <a href="md5-2.xps" class="uri">md5-2.xps</a></li>
+<li>3MF <a href="md5-1.3mf" class="uri">md5-1.3mf</a> / <a href="md5-2.3mf" class="uri">md5-2.3mf</a></li>
+</ul></li>
+</ul>
+<h1 id="sha1-shattered">SHA1 (Shattered)</h1>
+<ul>
+<li>JPG in PDF <a href="sha1-1.pdf" class="uri">sha1-1.pdf</a> / <a href="sha1-2.pdf" class="uri">sha1-2.pdf</a></li>
+</ul>
+<!--
+ffmpeg -i md5-1.png -c:v libx264 -tune stillimage -crf 22 -framerate 1/5 -c:a copy no.mp4 -map_metadata -1
+-->
+</body>
+</html>

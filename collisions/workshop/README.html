@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- pandoc -s -f gfm -t html README.md -o README.html -->
+
+<p><a href="../preview.png"><img width=350 src=../preview.png /></a></p>
+<h1 id="workshop-materials">Workshop materials</h1>
+<p><a href="https://speakerdeck.com/ange/colltris">Slides</a> (SpeakerDeck)</p>
+<p><a href="https://speakerdeck.com/ange/colltris"><img width=350 src=../pics/CollTris.png /></a></p>
+<p><a href="https://www.youtube.com/watch?v=BcwrMnGVyBI">Video</a> (Youtube)</p>
+<p><a href="https://www.youtube.com/watch?v=BcwrMnGVyBI"><img width=350 src=../pics/recording.jpg /></a></p>
+<h2 id="start-files">Start files</h2>
+<ul>
+<li>precomputed <a href="prefixes/README.md">prefixes</a></li>
+<li>PNG pictures: <img width=20 src=yes.png /> <a href="yes.png" class="uri">yes.png</a> / <img width=20 src=no.png /> <a href="no.png" class="uri">no.png</a></li>
+<li>GIF animation: <img width=20 src=yesno.gif /><a href="yesno.gif" class="uri">yesno.gif</a></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><p>simple PNG chunk reader/writer: <a href="minipng.py" class="uri">minipng.py</a></p>
+<ul>
+<li>resulting 'merged' image: <img width=20 src=final.png /><a href="final.png" class="uri">final.png</a></li>
+</ul></li>
+<li><p>simplified Kaitai grammar for abusive PNG files (starting with a dummy chunk): <a href="png_simple.ksy" class="uri">png_simple.ksy</a></p></li>
+<li><p>tiny PNG colliding files: <img width=40 src=tiny1.png /> Ken Silverman' <a href="http://web.archive.org/web/20070905115613/http://www.jonof.id.au/forum/index.php?topic=934.15#msg5809">most interesting</a> / <img width=40 src=tiny2.png /> 3x1 R,G,B =&gt; <a href="tiny1.png" class="uri">tiny1.png</a> / <a href="tiny2.png" class="uri">tiny2.png</a></p></li>
+</ul>
+<h2 id="captures">Captures</h2>
+<ul>
+<li><p>collisions: <a href="../examples/fastcoll.svg">FastColl</a> / <a href="../examples/unicoll.svg">UniColl</a> / <a href="../examples/cpc.html">HashClashCPC (log)</a></p></li>
+<li><p>precomputed collisions: <a href="../examples/pngGen.svg">generic PNG</a> / <a href="../examples/pngSpec.svg">specific header PNG</a></p></li>
+<li><p>collisions: <a href="../examples/gifFastColl.svg">GIF w/ FastColl</a> / <a href="../examples/pngUniColl.svg">PNG w/ UniColl</a></p></li>
+</ul>
+<h2 id="external-links">External links</h2>
+<ul>
+<li><a href="http://ide.kaitai.io">Kaitai IDE</a></li>
+<li><a href="https://github.com/cr-marcstevens/hashclash">HashClash</a></li>
+</ul>
+</body>
+</html>
