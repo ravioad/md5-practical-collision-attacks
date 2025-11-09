@@ -39,6 +39,28 @@ source venv/bin/activate
 
 # 4) Python deps
 pip install pycryptodome
+
+
+### 5) Build HashClash
+
+cd md5-collision-project/
+cd hashclash/
+
+# required build tools and libraries
+sudo apt-get install -y autoconf automake libtool
+sudo apt-get install -y zlib1g-dev libbz2-dev
+
+# build HashClash (automatically handles Boost if missing)
+chmod +x build.sh
+./build.sh
+
+# verify build
+find . -type f -name md5_fastcoll -perm -111
+
+# return to final_deliverables
+cd ..
+cd final_deliverables/
+
 ```
 
 ---
@@ -53,8 +75,7 @@ final_deliverables/collision_artifacts/
 ```bash
 # from project root
 source venv/bin/activate
-cd final_deliverables
-python3 generate_all_collisions.py
+python3 final_deliverables/generate_all_collisions.py
 ```
 
 ---
